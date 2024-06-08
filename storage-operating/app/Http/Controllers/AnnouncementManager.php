@@ -26,6 +26,12 @@ class AnnouncementManager extends Controller
         return view('pages.showAllAnnouncement', compact('announcements'));
     }
 
+    function usershowAllAnnouncements() {
+        $announcements = Announcement::all();
+
+        return view('pages.usershowAllAnnouncement', compact('announcements'));
+    }
+
     function addAnnouncementPost(Request $request) {
         $acceptableData = $request->validate([
             'tittle' => 'required',

@@ -51,8 +51,13 @@ Route::get('/editlastannouncement', [AnnouncementManager::class, 'editLastAnnoun
 Route::post('/editlastannouncement', [AnnouncementManager::class, 'editLastAnnouncementPost'])->name('editLastAnnouncement.post');
 Route::get('/showallannouncements', [AnnouncementManager::class, 'showAllAnnouncements'])->name('showAllAnnouncements');
 
-
 Route::get('/messages', [MessageManager::class, 'messages'])->name('messages');
 Route::post('/messages', [MessageManager::class, 'messagesPost'])->name('messages.post');
 Route::get('/chat', [MessageManager::class, 'messageChat'])->name('messageChat');
 Route::post('/chat', [MessageManager::class, 'messageChatPost'])->name('messageChat.post');
+
+Route::get('/usermessages', [MessageManager::class, 'usermessages'])->name('usermessages');
+Route::post('/usermessages', [MessageManager::class, 'usermessagesPost'])->name('usermessages.post');
+Route::get('/userchat', [MessageManager::class, 'usermessageChat'])->name('usermessageChat');
+Route::post('/userchat', [MessageManager::class, 'usermessageChatPost'])->name('usermessageChat.post');
+Route::get('/usershowallannouncements', [AnnouncementManager::class, 'usershowAllAnnouncements'])->name('usershowAllAnnouncements');

@@ -85,7 +85,18 @@
                         Hoş Geliniz {{Auth::user()->email}}
                     </a>
                 </li>
-                <li>
+
+                <li style="margin-right: 10px">
+                    <a href="{{route('usermessages')}}">
+                        Mesaj Gönder
+                    </a>
+                </li>
+
+                <li style="margin-right: 10px">
+                    <a href="{{route('usershowAllAnnouncements')}}">
+                        Duyurular
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
