@@ -1,4 +1,4 @@
-# Internet Based Programming 
+# Bu proje Laravel 9.5 ve MySQL kullanılarak geliştirilmiştir 
 Mahmut ATSIZ 2110206027
 
 ## Projeye ait görseller
